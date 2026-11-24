@@ -6,16 +6,26 @@
 <title>DexINF</title>
 <style>
 body{margin:0;background:#0e0f13;color:#e9ebf1;font:16px/1.6 system-ui,sans-serif}
-main{max-width:720px;margin:0 auto;padding:48px 16px}
-h1{margin:0 0 8px}a{color:#ffd60a}p{color:#c3c7d3}
+main{max-width:760px;margin:0 auto;padding:48px 16px}
+h1{margin:0 0 8px}a{color:#ffd60a}p,li{color:#c3c7d3}
+.yt{display:inline-flex;align-items:center;gap:10px;background:#fff;color:#0f0f0f;border-radius:8px;padding:8px 14px;font-weight:700;margin:12px 0}
+.yt svg{height:22px}
+nav{margin-top:24px;padding-top:16px;border-top:1px solid #2a2e3a}
 </style>
 </head>
 <body>
 <main>
 <h1>DexINF</h1>
-<p>DexINF é uma ferramenta pessoal, usada apenas pelo próprio dono, para organizar a produção dos seus vídeos e enviá-los aos seus próprios canais do YouTube usando a API oficial do YouTube (YouTube Data API v3).</p>
-<p>A ferramenta roda no computador do dono. Ela não é vendida, não tem cadastro de usuários e não coleta dados de terceiros.</p>
-<p><a href="privacidade.html">Política de Privacidade</a> · <a href="termos.html">Termos de Uso</a></p>
+<div class="yt"><svg viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" rx="5" fill="#FF0000"/><path d="M11 6l7 4-7 4z" fill="#fff"/></svg>Developed with YouTube</div>
+<p><b>DexINF</b> is a private desktop tool used only by its owner to publish videos to the owner's own YouTube channels. It uses the <b>YouTube API Services</b> (YouTube Data API v3) to upload videos, set titles, descriptions and thumbnails, and schedule publication.</p>
+<p>DexINF é uma ferramenta pessoal, usada apenas pelo próprio dono, para publicar vídeos nos seus próprios canais do YouTube usando os <b>Serviços de API do YouTube</b>. Ela roda no computador do dono, não é vendida, não tem cadastro de usuários e não coleta dados de terceiros.</p>
+<h2>How it works</h2>
+<ul>
+<li>The owner connects a channel once with Google sign-in (OAuth 2.0).</li>
+<li>The owner reviews each video in the local dashboard and clicks "Approve".</li>
+<li>DexINF uploads the approved video with <code>videos.insert</code>, sets the thumbnail with <code>thumbnails.set</code> and schedules it with <code>status.publishAt</code>.</li>
+</ul>
+<nav><a href="privacidade.html">Privacy Policy / Política de Privacidade</a> · <a href="termos.html">Terms of Use / Termos de Uso</a> · <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a></nav>
 </main>
 </body>
 </html>
